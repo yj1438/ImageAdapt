@@ -56,7 +56,7 @@ imgAdept.init();
 
 ### selector
 
-使用此插件的区域选择符，'body' 为全部页面 `img` 标签
+使用此插件的区域选择符/DOM元素，`'body'` 为全部页面 `img` 标签，也可为区域 dom 对象。
 
 ### options 选项
 
