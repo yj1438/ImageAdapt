@@ -37,7 +37,7 @@
     }
 
     /**
-     * 
+     * cover (铺满) 算法
      * 
      * @param {any} img_w 原始图片 width
      * @param {any} img_h 原始图片 height
@@ -69,6 +69,15 @@
         return point;
     }
 
+    /**
+     * contain (包含) 算法
+     * 
+     * @param {any} img_w 原始图片 width
+     * @param {any} img_h 原始图片 height
+     * @param {any} dest_w 目标图片 width
+     * @param {any} dest_h 目标图片 height
+     * @returns
+     */
     function containAlgorithm (img_w, img_h, dest_w, dest_h) {
         var w_scale = img_w / dest_w,
             h_scale = img_h / dest_h,
@@ -95,8 +104,12 @@
 
     /**
      * 制作适应大小的图片
-     * @param {any} imgurl
-     * @return {string} base64
+     * @param {string} imgurl
+     * @param {string} type
+     * @param {string} dest_width
+     * @param {string} dest_height
+     * @param {string} callback 生成 base64 后的回调，参数返回 base64 string
+     * @return void
      */
     function makeAdeptImg (imgurl, type, dest_width, dest_height, callback) {
         var img = new Image(),
@@ -185,8 +198,6 @@
         xhr.send();
     }
     */
-
-    window.ImageAdapt = ImageAdapt;
 
     /*
      * umd 模块化

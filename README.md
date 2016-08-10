@@ -72,5 +72,11 @@ imgAdept.init();
 
 `bgColor` contain 模式时，用于填充背景的颜色，默认`#eee`。
 
+> 此插件支持 AMD、CMD 加载
+
+## 注意事项
+
+线上站点的静态资源文件基本都与业务主站点域名分开，域名不一致。对此，记得在资源站点 `response` 里加上 `Access-Control-Allow-Origin: *`，允许跨域操作。
+至少允许主站域名可以跨域操作。
 
 
