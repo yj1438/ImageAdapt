@@ -66,7 +66,7 @@ imgAdept.init();
 
 `imgSlt` img 标签选择符，默认 `img`。
 
-`orignImg` img 标签中获取原图 URL 的属性，默认 `orignImg`。注意，此属性符合 h5 `dataset` 自定义属性规则，在实际页面`img`中记得加上 `data-`。
+`orignImg` img 标签中获取原图 URL 的属性，默认 `orignImg`。注意，此属性符合 h5 `dataset` 自定义属性规则，在实际页面`img`中此属性记得加上 `data-`。
 
 `times` X 倍图，默认为 `1`。 在移动端中可在配置 2、3。
 
