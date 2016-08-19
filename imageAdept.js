@@ -151,7 +151,7 @@
      */
     ImageAdapt.prototype.init = function () {
         var _config = this.config,
-            imgList = this.slt.querySelectorAll(_config.imgSlt);
+            imgList = this.slt.querySelectorAll(_config.imgSlt + ':not(.adept)');
         imgList.forEach(function (img, index) {
             var imgUrl = img.dataset[_config.orignImg],
                 width, height;
@@ -166,6 +166,7 @@
                 img.src = base64;
                 if (_config.type === 'contain') {
                     img.style.backgroundColor = _config.bgColor;
+                    img.classList.add('adept');
                 }
             });
         });
