@@ -1,0 +1,27 @@
+{
+  "name": "image-adapt",
+  "version": "1.0.0",
+  "description": "Automatically adjust the <img> image pixel to the optimal size",
+  "main": "imageAdept.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yj1438/ImageAdapt.git"
+  },
+  "keywords": [
+    "img",
+    "image",
+    "size"
+  ],
+  "author": "yinjie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yj1438/ImageAdapt/issues"
+  },
+  "homepage": "https://github.com/yj1438/ImageAdapt#readme"
+}
