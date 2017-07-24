@@ -209,7 +209,9 @@
      * umd 模块化
      */
     if (typeof exports !== 'undefined') {
-        exports.ImageAdapt = ImageAdapt;
+        // 兼容老版
+        ImageAdapt.ImageAdapt = ImageAdapt;
+        module.exports = ImageAdapt;
     } else if (typeof define === "function") {
         define([], function () {
             return ImageAdapt;
